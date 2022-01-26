@@ -1,0 +1,48 @@
+/* ==========
+   Designing a responsive system banner
+   with button attached.
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+a {
+    background: #38CFD9;
+    border-radius: 100px;
+    color: #23424A;
+    display: inline-block;
+    font-weight: 900;
+    margin-top: 3em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .75em 2em;
+}
+
+a:hover, 
+a:focus {
+    opacity: .75;
+}
+
+.hero {
+    background: #23424A;
+    padding: 100px 0;
+}
+
+.container {
+    color: #fff;
+    margin: 0 auto;
+    max-width: 750px;
+    width: 80%;
+}
+
+.hero-text {
+    width: 70%;
+}
