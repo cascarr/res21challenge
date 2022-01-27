@@ -1,5 +1,5 @@
 /* ==========
-   Day 08 challenge04 - flexbox (basics)
+   Day 08 coursework - flexbox (basics)
 
    Designing a responsive system page.
 
@@ -38,10 +38,6 @@ body {
     width: 50%;
 }
 
-.hero-text h1 {
-    font-size: 2.75rem;
-}
-
 .hero-text p {
     margin-bottom: 100px;
 }
@@ -53,6 +49,7 @@ body {
     display: inline-block;
     font-weight: 900;
     text-decoration: none;
+    text-transform: uppercase;
     padding: .75em .8em;
 }
 
@@ -61,30 +58,24 @@ body {
 }
 
 .row {
+    /* ==
+       display: flex => flex container
+       parent.
+    ==*/
     display: flex;
+
+    /* ==
+       default = row
+    ==*/
     flex-direction: row;
-    padding: 2em 0;
+    padding-top: 1em;
 }
 
 .col {
-    text-align: center;
+    /* flex items ==> children */
     width: 100%;
 }
 
 .col + .col {
     margin-left: 50px;
-}
-
-.pur h2 {
-    color: #87629A;
-    font-size: 2rem;
-}
-
-.pur p {
-    color: #3A3A3A;
-}
-
-.fl-container {
-    color: #fff;
-    background: #136C72;
 }
