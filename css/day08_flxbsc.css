@@ -3,13 +3,20 @@
 
    Designing a responsive system page.
 
-   1) Working with flexbox 
+   a) Working with flexbox 
       Using combinators '+', margin-left 
       safely align the flex items.
       
 
-    2) Limit the maximum width of the text
-       in the bottom area.
+    1) The headings in the first row must
+       be a different color.
+       
+    2) The two .col at the bottom must go 
+       next to one another.
+
+    3) The section at the bottom should 
+       have a dark background color and 
+       a different color of text.
 */
 
 *, *::before, *::after {
@@ -43,30 +50,33 @@ body {
 }
 
 .hero-text p {
-    margin-bottom: 100px;
+    margin-bottom: 3em;
 }
 
 .btn {
     background: #38CFD9;
     border-radius: 100px;
-    color: #136C72;
+    color: #23424A;
     display: inline-block;
     font-weight: 900;
     text-decoration: none;
+    text-transform: uppercase;
     padding: .75em .8em;
 }
 
 .btn:focus, .btn:hover {
-    opacity: 75%;
+    opacity: .75;
 }
 
 .row {
+    /* display: flex => flex container */
     display: flex;
     flex-direction: row;
     padding: 2em 0;
 }
 
 .col {
+    /* these are flex items */
     text-align: center;
     width: 100%;
 }

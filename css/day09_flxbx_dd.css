@@ -1,19 +1,22 @@
 /* ==========
-   Day 09 challenge - flexbox (deep dive)
+   Day 09 coursework - flexbox (deep dive)
 
    Designing a responsive system page.
 
-   
+   a) Working with flexbox 
+      Using combinators '+', margin-left 
+      safely align the flex items.
       
 
-    1) Refer to the design specs for the 
-       overall layout
+    1) The headings in the first row must
+       be a different color.
        
-    2) The image should line up with 
-       the sidebar in the section 
-       below.
+    2) The two .col at the bottom must go 
+       next to one another.
 
-    
+    3) The section at the bottom should 
+       have a dark background color and 
+       a different color of text.
 */
 
 *, *::before, *::after {
@@ -37,10 +40,9 @@ img {
 }
 
 .container {
+    border: 1px solid green;
     margin: 0 auto;
     max-width: 1100px;
-    padding-top: 2.7em;
-    padding-bottom: 1.75em;
     width: 80%;
 }
 
@@ -48,12 +50,8 @@ img {
     width: 65%;
 }
 
-.hero-text h1 {
-    font-size: 3rem;
-}
-
 .hero-text p {
-    margin-bottom: 1.5em;
+    margin-bottom: 3em;
 }
 
 .btn {
@@ -62,13 +60,9 @@ img {
     color: #3A3A3A;
     display: inline-block;
     font-weight: 900;
+    padding: .75em .8em;
     text-decoration: none;
     text-transform: uppercase;
-    padding: .75em .2em;
-}
-
-.btn:focus, .btn:hover {
-    opacity: 0.75;
 }
 
 .row {
@@ -78,32 +72,6 @@ img {
 
 .hero-img {
     align-self: flex-start;
-    margin-top: 2em;
+    border: 1px solid red;
     width: 32%;
-}
-
-.cus-content {
-    width: 65%;
-}
-
-.cus-content h2 {
-    color: #136C72;
-    font-size: 2.2rem;
-}
-
-.cus-content p {
-    color: #3A3A3A;
-}
-
-.experience {
-    background: #136C72;
-    color: #fff;
-    flex-direction: column;
-    text-align: center;
-    width: 32%;
-}
-
-.experience .col {
-    width: 100%;
-    padding: 0 .5em;
 }
