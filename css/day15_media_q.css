@@ -112,7 +112,11 @@ header {
         max-width: 600px;
     }
 
-    .hero-text {
+    .hero-text, 
+    .hero-btn, 
+    .hero-img, 
+    .main-container,
+    .side-bar {
         width: 100%;
     }
 
@@ -123,16 +127,10 @@ header {
     .hero-btn {
         font-size: 1rem;
         text-align: center;
-        width: 100%;
     }
 
     .hero-img {
         padding-top: 2.5em;
-        width: 100%;
-    }
-
-    .main-container {
-        width: 100%;
     }
 
     .main-container h2 {
@@ -141,7 +139,6 @@ header {
 
     .side-bar {
         padding: .5em;
-        width: 100%;
     }
 
 }

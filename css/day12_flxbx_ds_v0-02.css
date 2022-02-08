@@ -1,0 +1,131 @@
+/* ==========
+   Day 12 challenge - flexbox multi-design page (v0.02)
+   -- day12_flxbx_ds_v0-02 --
+
+   Designing a responsive system page
+   and navigation.
+
+   
+      
+
+    1) Get all the navigation items  
+       next to one another
+       
+    2) Add a space between all the  
+       items.
+
+    
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Playfair Display', serif, sans-serif;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, span {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: #F3EED9;
+    padding: 3.75em 0;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.header-text span {
+    font-family: 'Roboto';
+}
+
+.header-text, .quality h2 {
+    color: #824936;
+    text-align: center;
+}
+
+.header-text h1, .quality h2 {
+    font-family: 'Playfair Display';
+}
+
+.header-text span {
+    font-size: 1rem;
+    letter-spacing: 5px;
+}
+
+.sect-one, .sect-two, .sect-three {
+    padding: 2em;
+}
+
+.quality h2, .col-cl h2 {
+    font-size: 1.5em;
+}
+
+/* .quality-row .col {} */
+
+.sect-two {
+    background: #222C2A;
+}
+
+.col-cl h2, .col-cl p {
+    color: #fff;
+}
+
+.col-cl h2, .col-cl p {
+    text-align: center;
+}
+
+.img {
+    /* margin: 1em 0; */
+    padding: 1em 0;
+}
+
+.sect-three {
+    background: #824936;
+}
+
+
+/* designing for bigger screens */
+@media (min-width: 600px) {
+    .container {
+        margin: 0 auto;
+        max-width: 1128px;
+        min-height: 200px;
+        width: 80%;
+    }
+
+    .header-text {
+        margin: 0 auto;
+        width: 67%;
+    }
+
+    .header-text h1 {
+        /**/
+        font-size: 2.5em;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .col {
+        align-self: flex-start;
+        width: 45%;
+    }
+
+    .col-cl h2, .col-cl p {
+        text-align: start;
+    }
+}
