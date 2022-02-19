@@ -6,74 +6,319 @@
     <meta name="viewport" content="width=device-width,
         initial-scale=1.0" />
     <title>
-        Day19:: mobile navigation challenge
+        Day21:: mobile responsive challenge
     </title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css" />
+
 </head>
 
 <body>
 
-    <header>
-        <div class="container row">
-            <button class="nav-toggle" aria-label="open navigation">
-                <span class="hamburger"></span>
-            </button>
-            <a class="logo" href="#">
-                <img src="img/logo.svg" alt="conquering responsive layouts">
+    <div class="header">
+
+        <div class="container a-cont hn-cont row">
+
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </a>
-            <nav class="nav">
-                <ul class="nav__list nav__list--primary">
-                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-                </ul>
-                <ul class="nav__list nav__list--secondary">
-                    <li class="nav__item"><a href="#" class="nav__link">Sign In</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link nav__link--button">Sign up</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <section class="hero">
+            <a class="logo" href="#">
+                <img src="./img/logo.svg" alt="logo image">
+            </a>
+
+            <div class="nav row" id="myTopnav">
+
+                <ul class="nav-list list--primary row">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#">
+                            Home
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#">
+                            About
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#">
+                            Contact
+                        </a>
+
+                    </li>
+
+                </ul><!-- .nav-list .list--primary -->
+
+                <ul class="nav-list list--secondary row">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#">
+                            Sign in
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link sign-btn" href="#">
+                            Sign out
+                        </a>
+
+                    </li>
+                </ul><!-- .nav-list .list--secondary -->
+
+            </div><!-- .nav -->
+
+        </div><!-- .container -->
+
+    </div><!-- .header -->
+
+    <div class="hero">
+
+        <div class="container hero-hd row">
+
+            <div class="hero-text">
+
+                <h1>
+                    Responsive layouts
+                    <span class="hero-span">
+                        don't have to be
+                        a struggle
+                    </span>
+                </h1>
+
+            </div><!-- .hero-text -->
+
+            <div class="hero-text-rgt">
+
+                <div class="hero-para">
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                        consectur adipiscing elit,
+                        sed do eiusmod tempor
+                        incididunt ut labore et dolore
+                        magna aliqua.
+                    </p>
+                </div><!-- .hero-para -->
+                <a class="hero-btn" href="#">
+                    I want to learn
+                </a>
+
+            </div><!-- .hero-text-rgt -->
+
+        </div><!-- .container -->
+
+    </div><!-- .hero -->
+
+    <div class="section-one">
+
         <div class="container row">
-            <div class="hero__text">
-                <h1>Responsive layouts don’t have to be a struggle</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                <a href="#" class="btn">I want to learn</a>
+
+            <div class="col">
+
+                <h2>Mobile-first</h2>
+                <p>
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit,
+                    sed do eiusmod tempor
+                    incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim
+                    veniam.
+                </p>
+
             </div>
-            <img src="img/hero-img.jpg" alt="UX design sketches" class="hero__img">
-        </div>
-    </section>
 
-    <main class="main container row">
-        <section class="primary-content">
-            <h2 class="section-title">Quality designs made custom, on demand, just for you</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-        </section>
-        <aside class="sidebar">
-            <h2 class="sidebar-title">Cheap</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <div class="col">
 
-            <h2 class="sidebar-title">Quick</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <h2>Efficient</h2>
+                <p>
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit,
+                    sed do eiusmod tempor
+                    incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim
+                    veniam.
+                </p>
 
-            <h2 class="sidebar-title">Quality</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam.</p>
-        </aside>
-    </main>
+            </div>
 
-    <script src="./js/main.js"></script>
+            <div class="col">
+
+                <h2>Done right</h2>
+                <p>
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit,
+                    sed do eiusmod tempor
+                    incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim
+                    veniam.
+                </p>
+
+            </div>
+
+        </div><!-- .container -->
+
+    </div><!-- .section-one -->
+
+    <div class="section-two">
+
+        <div class="container row sec--tw-cont">
+
+            <div class="main-content">
+
+                <h2>
+                    It doesn't have to be
+                    so hard
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit,
+                    sed do eiusmod tempor
+                    incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim
+                    veniam. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim
+                    veniam.
+                </p>
+
+                <img class="main-img" src="./img/hero-img.jpg" alt="website sketchy" />
+
+                <p>
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit,
+                    sed do eiusmod tempor
+                    incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim
+                    veniam. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim
+                    veniam.
+                </p>
+
+            </div><!-- .main-content -->
+
+            <div class="side-bar">
+
+                <div class="col side-col">
+
+                    <h2>Break it down</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit,
+                        sed do eiusmod tempor
+                        incididunt ut labore et dolore
+                        magna aliqua.
+                    </p>
+
+                </div>
+
+                <div class="col side-col sd-ef">
+
+                    <h2>Work your way up</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit,
+                        sed do eiusmod tempor
+                        incididunt ut labore et dolore
+                        magna aliqua.
+                    </p>
+
+                </div>
+
+                <div class="col side-col sd-ef">
+
+                    <h2>Break it down</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit,
+                        sed do eiusmod tempor
+                        incididunt ut labore et dolore
+                        magna aliqua.
+                    </p>
+
+                </div>
+
+            </div><!-- .side-bar -->
+
+        </div><!-- .container -->
+
+    </div><!-- .section-two -->
+
+    <div class="section-three">
+
+        <div class="container">
+
+            <h2>
+                Just scratching the
+                surface
+            </h2>
+
+            <div class="row sec-3-row">
+
+                <div class="col s3-col sec-3-lft">
+
+                    <h3>
+                        About our company
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit,
+                        sed do eiusmod tempor
+                        incididunt ut labore et
+                        dolore magna aliqua.
+                        Ut enim ad minim veniam.
+                    </p>
+
+                </div>
+
+                <div class="sec-3-rgt row">
+
+                    <div class="col s3-col">
+                        <h3>Getting around</h3>
+                        <p>Home</p>
+                        <p>About</p>
+                        <p>Contact</p>
+                    </div>
+                    <div class="col s3-col">
+                        <h3>Other things</h3>
+                        <p>Lorem ipsum</p>
+                        <p>dolor</p>
+                        <p>sit amet</p>
+                        <p>consectetur</p>
+                    </div>
+                    <div class="col s3-col">
+                        <h3>And more</h3>
+                        <p>Lorem ipsum</p>
+                        <p>dolor</p>
+                        <p>sit amet</p>
+                        <p>consectetur</p>
+                    </div>
+
+                </div>
+
+            </div><!-- .row -->
+
+        </div><!-- .container -->
+
+    </div><!-- .section-three -->
+
+    <script src="./js/flex-main.js" defer></script>
 
 </body>
 
